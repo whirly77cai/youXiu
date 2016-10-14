@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>商家登录</title>
+	<link rel="stylesheet" href="css/index.css">
+	<script src="js/index.js"></script>
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="logo">
+				<img src="imgs/logo.png" alt="logo">
+			</div>
+			<ul class="navbar">
+				<li><a href="#">首页</a></li>
+				<li><a href="#">售后保修</a></li>
+				<li><a href="#">手机维修</a></li>
+				<li><a href="#">手机回收</a></li>
+				<li><a href="#">手机保险</a></li>
+			</ul>
+			<div class="navbar_left">
+				<a href="#">登录</a>
+				<span class="pipe"> | </span>
+				<a href="#">注册</a>
+			</div>
+		</nav>
+	</header>
+	<article >
+		<div class="banner" id="login-banner">
+			<img src="imgs/banner.png" alt="banner">
+			<a href="#" class="btn">< 返回</a>
+		</div>
+		<p id="location">首页 > 商家</p>
+		<div id="content">
+			<section>
+				<form action="" id="login">
+					<div class="btnGroup">
+						<label for="account">账号</label>
+						<div class="warp-input">
+							<input type="text" name="account" id="account" placeholder="请输入您的账号绑定的手机号">
+						</div>					
+					</div>
+					<div class="btnGroup">
+						<label for="password">登录密码</label>
+						<div class="warp-input">
+							<input type="password" name="password" id="password" placeholder="请输入您的登录密码">
+						</div>					
+					</div>
+					<div class="warp-submit">
+						<input type="submit">
+					</div>
+					<input type="checkbox" name="autoLogin" id="autoLogin">					
+					<label for="autoLogin">下次自动登录</label>
+					<a href="#">忘记密码</a>
+				</form>
+			</section>
+			<aside>
+				<p class="title">还没有优修账号？</p>
+				<a href="javascript:;"></a>
+				<p class="title">优修商城公众号</p>
+				<div class="qrcode">
+					<img src="imgs/QRCode.png" alt="商城公众号">
+					<p>关注优修商城公众号，<br>
+					了解维修配件最新报价。</p>
+				</div>
+				<p class="title">联系优修客服咨询</p>
+				<p class="contact">电话：4000 9160 000</p>
+				<p class="contact">周一至周日 09:00-18:00</p>
+				<p class="title">优修微信公众号</p>
+				<div class="qrcode">
+					<img src="imgs/WeChatQRCode.png" alt="商城公众号">
+					<p>关注优修微信公众号，<br>随时跟进订单状态。</p>
+				</div>
+			</aside>
+		</div>
+	</article>
+	<footer>
+		
+	</footer>
+</body>
+</html>
