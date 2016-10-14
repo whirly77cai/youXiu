@@ -14,18 +14,369 @@ a{
 	text-decoration: none;
 }
 
+img{
+	max-width: 100%;
+	height: auto;
+}
+
 
 
 /*样式*/
+
 
 html{
 	font-size: 20px;
 }
 
+@media only screen and (min-width: 1000px){
+	html{
+		font-size: 20px;
+	}
+}
+
+@media only screen and (max-width: 980px){
+	html{
+		font-size: 19.6px !important;
+	}
+}
+
+@media only screen and (max-width: 850px){
+	html{
+		font-size: 17px !important;
+	}
+}
+
+@media only screen and (min-width: 750px){
+	.nav-toggle{
+		display: none;
+	}
+	nav ul.navbar li:nth-child(6), nav ul.navbar li:nth-child(7){
+		display: none !important;
+	}
+	nav ul.navbar{
+		opacity: 1 !important;
+	}
+}
+
+@media only screen and (max-width: 750px){
+	html{
+		font-size: 15px !important;
+	}
+	header{
+		height: 60px !important;
+		position: fixed;
+	    z-index: 9999;
+	    left: 0;
+	    top: 0
+	}
+	nav{
+		height: 60px !important;
+	}
+	nav .logo{
+		margin-left: 1rem;
+	}
+	nav .logo .img{
+		padding: 15px 0 !important;
+	}
+	nav ul.navbar{
+		border: #000;
+		position: absolute;
+		top: 60px;
+		right: 100%;
+		z-index: 9999;
+		background: #fff;
+		width: 100% !important;
+		border: 1px solid #ccc !important;
+		border-right: none !important;
+		opacity: 0;		
+	}
+	nav ul.navbar li {
+		display: block !important;
+		width: 100% !important;
+		border-bottom: 1px solid #ccc !important;
+	}
+
+	nav ul.navbar li a{
+		display: block !important;
+		width: 100% !important;
+		margin: 0 !important;
+		font-size: 20px !important;
+		font-weight: normal !important;
+	}
+	nav ul.navbar li:nth-child(6) {
+		text-align: right !important;
+		border-bottom: none !important;
+	}
+
+	nav ul.navbar li:nth-child(6) a{
+		text-align: center !important;
+		display: inline-block !important;
+		width: 60px !important;
+	}
+
+	nav .navbar_left{
+		display: none !important;
+	}
+
+	.nav-toggle{
+		display: inline-block;
+		position: absolute;
+	    right: 2rem;
+	    top: 18px
+	}
+
+
+	div#content{
+		display: block !important;
+		width: 100%;
+		height: auto !important;
+	}
+	div#content section{
+		width: 100%;
+		height: auto !important;
+	}
+	div#content aside{
+		width: 100%;
+		height: auto !important;
+	}
+	
+
+	form#login{
+		padding-top: 2.4rem;
+		width: 30%;
+		margin: 0 auto !important;
+	}
+
+	aside{
+		padding: 0 !important;
+	}
+
+	div.info-wrap{
+		width: 30%;
+		margin: 0 auto !important;
+		padding-top: 20px;
+	}
+
+	/*p.title:first-child{
+		padding-top: 20px;
+	}*/
+	
+	.btnGroup{
+		width: 17.4rem;
+	}
+}
+
+@media only screen and (max-width: 640px){
+	html{
+		font-size: 12.8px !important;
+	}
+	form#login{
+		width: 40%;
+	}
+
+	div.info-wrap{
+		width: 40%;
+	}
+}
+
+@media only screen and (max-width: 560px){
+	html{
+		font-size: 11.2px !important;
+	}
+	form#login{
+		width: 50%;
+	}
+	div.info-wrap{
+		width: 50%;
+	}
+
+}
+
+@media only screen and (max-width: 550px){
+	html{
+		font-size: 11px !important;
+	}
+	form#login{
+		width: 46%;
+	}
+	div.info-wrap{
+		width: 46%;
+	}
+
+}
+
+@media only screen and (max-width: 480px){
+	html{
+		font-size: 9.6px !important;
+	}
+	form#login{
+		width: 60%;
+	}
+	div.info-wrap{
+		width: 60%;
+	}
+}	
+
+@media only screen and (max-width: 450px){
+	html{
+		font-size: 9px !important;
+	}
+	form#login{
+		width: 61%;
+	}
+	div.info-wrap{
+		width: 61%;
+	}
+}
+
+@media only screen and (max-width: 420px){
+	html{
+		font-size: 8.4px !important;
+	}
+	form#login{
+		width: 65%;
+	}
+	div.info-wrap{
+		width: 65%;
+	}
+}	
+
+@media only screen and (max-width: 375px){
+	html{
+		font-size: 7.5px !important;
+	}
+	form#login{
+		width: 70%;
+	}
+	div.info-wrap{
+		width: 70%;
+	}
+}
+
+@media only screen and (max-width: 361px){
+	html{
+		font-size: 7.2px !important;
+	}
+	form#login{
+		width: 80%;
+	}
+	div.info-wrap{
+		width: 80%;
+	}
+}
+
+@media only screen and (max-width: 320px){
+	html{
+		font-size: 6.4px !important;
+	}
+}
+
+/*@media only screen and (min-width: 320px){
+	html{
+		font-size: 6.4px !important;
+	}
+}*/
+
+
+/*公共类的定义*/
+.none{
+	display: none;
+}
+
+.open-nav{
+	z-index: 9999;
+	position: fixed;
+	width: 100%;
+	height: 60px;
+	left: 0;
+	top: 0;
+	background: #fff;
+}
+.nav-toggle span{
+    display: block;
+    width: 30px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #cdcdcd;
+    border-radius: 3px;
+    z-index: 1;
+    -webkit-transform-origin: 25px;
+    transform-origin: 27px;
+    -webkit-transition: background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    transition: background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+/*改变横条的角度*/
+.nav-toggle.toggle-animate span{
+	opacity: 1;
+	-webkit-transform: rotate(-45deg);
+			transform: rotate(-45deg);
+}
+
+/*隐藏第二个横条*/
+.nav-toggle.toggle-animate span:nth-child(2){
+	opacity: 0;
+}
+
+/*改变第三个横条的角度*/
+.nav-toggle.toggle-animate span:nth-child(3){
+	opacity: 1;
+	-webkit-transform: rotate(45deg);
+			transform: rotate(45deg);
+}
+
+.submitBtn{
+	display: inline-block;
+	height: 1.8rem;
+	width: 16.4rem;
+	background: #509eff;
+	color: #fff !important;
+	font-size: 0.9rem;
+	text-align: center;
+	line-height: 1.8rem;
+	margin-left: 0 !important;
+	margin-bottom: 1rem;
+	font-weight: bold;
+}
+
+.signupBtn{
+	display: inline-block;
+	height: 2rem;
+	width: 6.2rem;
+	background: #509eff;
+	color: #fff !important;
+	font-size: 0.9rem;
+	text-align: center;
+	line-height: 2rem;
+	font-weight: bold;
+}
+
+.mask{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	background: rgba(0, 0, 0, 0.7);
+}
+
+.row{
+	width: 100%;
+	height: 1rem;
+}
+
+/*********************************/
 body{
 	background: #f8f9fa;
 	font-size: 0.7rem;
 	margin: 0;
+}
+
+div.mask{
+	opacity: 0;
+	z-index: -1;
 }
 
 header{
@@ -90,6 +441,8 @@ nav .navbar_left a{
 
 div.banner{
 	position: relative;
+	height: 12.4rem;
+	width: 50rem;
 }
 
 div.banner a{
@@ -102,8 +455,9 @@ div.banner a{
 }
 
 #location{
-	padding: 1rem 3rem;
+	padding: 1rem 3rem 0 3rem;
 	font-size: 0.8rem;
+	line-height: 1.8rem;
 }
 
 #content{
@@ -198,12 +552,12 @@ aside p.title{
 aside p.title:first-child{
 	padding-top: 0;
 }
-aside a{
+/*aside a{
 	display: block;
 	height: 2rem;
 	width: 6.2rem;
 	background: url(../imgs/btn_1.png);
-}
+}*/
 
 aside p.contact{
 	margin-top: 0.5rem;
@@ -212,3 +566,4 @@ aside p.contact{
 aside .qrcode{
 	display: flex;
 }
+
