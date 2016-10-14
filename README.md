@@ -1,5 +1,6 @@
 # youXiu（还没为ms实现兼容）
 还在思考的问题，要不要采用js实现全响应呢？
+
                         function autoRem(){
                                 var w = $(window).width();
                                 //console.log(w);
